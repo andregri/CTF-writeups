@@ -8,4 +8,4 @@ Some writeups of CTFs
 ## Crypto
 
 - [XORed](hsctf7_2020/crypto/XORed/)
-- [Analyse me](zh3ro_2020/analyse_me/)
+- [Analyse me](zh3r0_2020/analyse_me/) 477
