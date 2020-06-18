@@ -181,7 +181,9 @@ else:
     quit()
 ```
 
-The number of substitutions is "random" due to `rand_num` but it ranges in [2,4], that is I tried all the possible values (2, 3, 4):
+The number of substitutions is "random" due to `rand_num` but it ranges in [2,4], that is I tried all the possible values (2, 3, 4).
+
+Try all the 3 values until you get the flag!
 
 [decrypt.py](zh3r0_2020/analyse_me/decrypt.py)
 
@@ -229,10 +231,15 @@ flag_list=[]
 for c in final_list:
     chr=c.decode()
     num=0
-    while num < 4:
+    while num < 3:  # try 2, 3, 4
         chr = rev_table(chr[0]+chr[1]) + rev_table(chr[2]+chr[3]) + rev_table(chr[4]+chr[5]) + rev_table(chr[6]+chr[7])
         num+=1
     flag_list.append(unhexlify(chr))
 
-print(flag_list)
+for f in flag_list:
+    print(f.decode(), end='')
+```
+
+```
+$ zh3r0{Y0u_4r3_4_v3ry_G00d_4nalys3r!}
 ```
