@@ -84,9 +84,10 @@ flag_list=[]
 for c in final_list:
     chr=c.decode()
     num=0
-    while num < 4:
+    while num < 3:  # try 2, 3, 4
         chr = rev_table(chr[0]+chr[1]) + rev_table(chr[2]+chr[3]) + rev_table(chr[4]+chr[5]) + rev_table(chr[6]+chr[7])
         num+=1
     flag_list.append(unhexlify(chr))
 
-print(flag_list)
+for f in flag_list:
+    print(f.decode(), end='')
