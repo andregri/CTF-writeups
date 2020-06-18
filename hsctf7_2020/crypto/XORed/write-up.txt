@@ -1,0 +1,6 @@
+non usare la prima e la penultima.
+
+int.to_bytes(len,order) dove len si mette un numero grande a caso
+oppure 
+bytes.fromhex('af453f').decode()
+nel secondo metodo la stringa di input non deve avere 0x davanti.
