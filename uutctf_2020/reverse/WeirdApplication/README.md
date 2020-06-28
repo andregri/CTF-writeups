@@ -3,7 +3,7 @@
 
 ### Challenge
 
-![challenge screenshot](/images/challenge.png)
+![challenge screenshot](images/challenge.png)
 
 ### Tools
 
@@ -16,13 +16,13 @@
 
 First, I installed the apk in the Android emulator to see what it does. I'm using an Android 7.0 API 24.
 
-![app screenshot](/images/app_screenshot.png)
+![app screenshot](images/app_screenshot.png)
 
 There is a list of services including one called _Weird APK_. Even if I activate it, nothing happens.
 
 When pressing the _back_ button of Android, an interesting activity is displayed:
 
-![strange activity](/images/strange_activity.png)
+![strange activity](images/strange_activity.png)
 
 It means that there is some code that prints the flag. I have used **jadx-gui** to decompile the apk using the command:
 
@@ -32,15 +32,15 @@ jadx-gui --show-bad-code WeirdApplication.apk
 
 After I inspected all the files I hadn't found any flag in clear text. **Main activity** contains two classes defined by the user and called by jadx as **ig** and **hg**, which take a **long** as input and seems to return a string:
 
-![main activity code](/images/main_activity.png)
+![main activity code](images/main_activity.png)
 
 From the decompiled code I see that the **hg** class is an abstract class with only static members and methods that do some binary operations on the argument to obtain a string.
 
-![hg class](/images/hg_class.png)
+![hg class](images/hg_class.png)
 
 I looked also at the code of the **ig** class, which is more interesting because uses the **hg** class and has a method that prints `UUTCTF{??????????????????????}` in the strange activity:
 
-![ig class](/images/ig_class.png)
+![ig class](images/ig_class.png)
 
 Inside the method `public String a()` there is a for loop that clearly prints the flag: it tells where to put underscores (lines 41 and 42) and to take each letter from the member `this.c[i4].charAt(0)` (line 45). The array `public String[]c` is defined at the beginning of the class (line 11) and it is initialized with some strings obtained from the **hg** class! The array contains 14 values, even if is clipped by the image.
 
