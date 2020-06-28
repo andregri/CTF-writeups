@@ -8,8 +8,8 @@ Some writeups of CTFs
 ## Crypto
 
 - [XORed](hsctf7_2020/crypto/XORed/)
-- [Analyse me](zh3r0_2020/analyse_me/) 477
+- [Analyse me](zh3r0_2020/crypto/analyse_me)
 
 ## Reverse
 
-- [Weird Application](uutctf_2020/WeirdApplication/)
+- [Weird Application](uutctf_2020/reverse/WeirdApplication)
