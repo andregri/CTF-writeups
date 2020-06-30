@@ -1,5 +1,5 @@
 # Login
-[![Generic badge](https://img.shields.io/badge/web-sql injection-<COLOR>.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/web-sql%20injection-<COLOR>.svg)](https://shields.io/)
 
 ## Challenge
 ![challenge screenshot](images/challenge.png)
