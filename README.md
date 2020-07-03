@@ -29,3 +29,10 @@ Some writeups of CTFs
 
 ### xss
 - [static-pastebin - redpwn CTF](redpwnCTF_2020/web/static-pastebin)
+
+### php
+
+- [Galleria1 - CSCML2020 CTF](cscml2020/Galleria1)
+
+### path traversal
+- [WebServer I - CSCML2020 CTF](cscml2020/WebServer-I)
