@@ -32,7 +32,7 @@ Some writeups of CTFs
 
 ### php
 
-- [Galleria1 - CSCML2020 CTF](cscml2020/Galleria1)
+- [Galleria1 - CSCML2020 CTF](cscml2020/web/Galleria1)
 
 ### path traversal
 - [WebServer I - CSCML2020 CTF](cscml2020/WebServer-I)
